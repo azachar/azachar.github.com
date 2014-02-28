@@ -81,13 +81,13 @@ Here is how it could look:
 [![Passing Failures Data][passing]][passing]
 
 ### Preview Implementation
-I created a sample implementation that demonstrate a visual power of failed message. Look at the github project
+I created an initial implementation that demonstrates the power of visualization of failed tests. Look at the following github project
 
 [Eclipse JDT Fork Aims to Provide Better Visual Experience of Failed Tests][sampleLink]
 
-The implementation is based on advance handling of ``org.junit.ComparisonFailure``, so it can be used even today.
+The implementation is based on advance handling of ``org.junit.ComparisonFailure``, so it can be used even today!
 
-For some complex failures such as  ```assertThat(objectA).isEqualToComparingFieldByField(objectB);``` that do not support ``expected`` and ``actual`` values, is visualization more problematic. As an sample implementation I created a fork from AssertJ that provides a simple text based comparison using ``expected`` and ``actual`` values. This is just a temporary demo implementation. When this proposal will take some actions, it will be updated to a decent solution, hopefully it would be soon :)
+For some more complex failures such as  ```assertThat(objectA).isEqualToComparingFieldByField(objectB);``` that do not support ``expected`` and ``actual`` values, is the visualization problematic. As an sample implementation I created a fork from the AssertJ project that provides a simple text based comparison using ``expected`` and ``actual`` values. This is just a temporary demo implementation. When this proposal will take some actions, it will be updated to a decent solution, hopefully it would be soon :)
 
 
   
@@ -95,7 +95,7 @@ For some complex failures such as  ```assertThat(objectA).isEqualToComparingFiel
 So open questions are:
 
 1. What do you think about the proposal?
-2. If you like it, who will be providing classes for ```DescriptiveAssertionException``` with ``AssertionExceptionModel``? It sounds to me that JAVA itself should contain such a dependency… But until this become part of Java should we create a maven artefact org.testing:api:1.0.0 that would provide these classes so any other tool or testing library can use these simple classes. For backward compatibility can we put it in the same package as ``java.lang.AssertionException``, e.g. into java.lang?
+2. If you like it, who will be providing classes for ```DescriptiveAssertionException``` with ``AssertionExceptionModel``? It sounds to me that JAVA itself should contain such a dependency… But until this become part of Java should we create a maven artefact ``org.testing:api:1.0.0`` that would provide these classes so any other tool or testing library can use these simple classes. For backward compatibility can we put it in the same package as ``java.lang.AssertionException``, e.g. into ``java.lang``?
  
  
 I look forward to hearing from you!
