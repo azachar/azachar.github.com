@@ -68,7 +68,7 @@ Where
  -  ``templateContentType`` specifies a content type of visual template (for example mustache or velocity template or  http://jknack.github.io/handlebars.java or any other light framework ) in order to render data in a nice way in your IDE or your  TOOL.
 
 
-### Why we cannot pass the exception with all data directly to the IDE? 
+### Why we cannot pass the exception with all data directly to your IDE? 
 There is a huge issue with it:
 
 Your tests are executed in a different virtual machines (VM) than your IDE or tool in order to provide isolation of test failures. So if your IDE wants to know what is happing, it receives messages from the testing VM about failures.
