@@ -12,6 +12,8 @@ title : Chocolate Jar Blog
 tagline: Java
 author :
   name : Andrej Zachar
+  company : Chocolate Jar
+  companyUrl : 'http://www.chocolatejar.eu/'
   email : andrej@chocolatejar.eu
   github : azachar
   twitter : andrej_zachar
